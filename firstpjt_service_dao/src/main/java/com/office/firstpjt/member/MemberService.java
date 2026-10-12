@@ -30,7 +30,7 @@ public class MemberService {
 	}
 	
 	public void signInConfirm(MemberDto memberDto) {
-		System.out.println("[MemberService] signUpConfirm()");
+		System.out.println("[MemberService] signInConfirm()");
 		
 		memberDao.selectMember(memberDto);
 	}
