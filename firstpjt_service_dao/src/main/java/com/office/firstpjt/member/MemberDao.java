@@ -33,7 +33,7 @@ public class MemberDao {
 		System.out.println("[MemberDao] printAllMember()");
 		
 		Set<String> keys = MEMBER_DB.keySet();
-		Iterator<String> iterator =keys.iterator();
+		Iterator<String> iterator = keys.iterator();
 		
 		while (iterator.hasNext()) {
 			String m_id = iterator.next();
