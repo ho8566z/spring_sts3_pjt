@@ -3,6 +3,9 @@ package com.office.firstpjt.member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 회원가입·로그인 처리 로직을 담당하고, 실제 DB 작업은 MemberDao 에 맡긴다.
+ */
 @Service
 //@Component
 public class MemberService {
