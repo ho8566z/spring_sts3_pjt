@@ -1,5 +1,8 @@
 package com.office.firstpjt.member;
 
+/**
+ * 회원 정보(아이디, 비밀번호, 메일, 전화번호, 나이)를 담아 옮기는 DTO.
+ */
 public class MemberDto {
 	
 	private String m_Id;
