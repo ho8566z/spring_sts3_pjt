@@ -24,6 +24,7 @@ public class MemberController {
 	public String signUp() {
 		System.out.println("[MemberController] signUp() called");
 		
+		// 뷰 이름 반환 : 뷰 리졸버가 sign_up 화면을 찾아 보여준다
 		return "sign_up";
 	}
 	
