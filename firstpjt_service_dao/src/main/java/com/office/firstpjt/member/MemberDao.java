@@ -52,18 +52,6 @@ public class MemberDao {
 		System.out.println("[MemberDao] selectMember()");
 		
 		MemberDto selectedMemberDto = MEMBER_DB.get(memberDto.getM_Id());
-		/*
-		if (selectedMemberDto != null) {
-			if (selectedMemberDto.getM_Pw().equals(memberDto.getM_Pw())) {
-				System.out.println("SIGN IN SUCCESS");
-			} else {
-				System.out.println("SIGN IN FAIL");
-			}
-		} else {
-			System.out.println("SIGN IN FAIL");
-		}
-		*/
-		
 		if (selectedMemberDto != null && 
 				selectedMemberDto.getM_Pw().equals(memberDto.getM_Pw())) {
 			System.out.println("SIGN IN SUCCESS!!");
