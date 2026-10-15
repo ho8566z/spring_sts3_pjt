@@ -28,27 +28,6 @@ public class MemberController {
 		return "sign_up";
 	}
 	
-	// 회원가입 확인
-	/*
-	@RequestMapping(value="/signUpConfirm", method=RequestMethod.POST)
-	public String signUpConfirm(
-			@RequestParam String m_Id,
-			@RequestParam String m_Pw,
-			@RequestParam String m_Mail,
-			@RequestParam String m_Phone,
-			@RequestParam String m_Age) {
-		System.out.println("[MemberController] signUpConfirm() called");
-		
-		System.out.println("m_Id : " + m_Id);
-		System.out.println("m_Pw : " + m_Pw);
-		System.out.println("m_Mail : " + m_Mail);
-		System.out.println("m_Phone : " + m_Phone);
-		System.out.println("m_Age : " + m_Age);
-		
-		return "";
-	}
-	*/
-	
 	// 회원가입 확인(+MemberDto)
 	@RequestMapping(value="/signUpConfirm", method=RequestMethod.POST)
 	public String signUpConfirm(MemberDto memberDto) {
