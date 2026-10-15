@@ -9,6 +9,9 @@ import org.springframework.stereotype.Repository;
 
 //@Service
 //@Component
+/**
+ * 회원 정보를 저장·조회하는 DAO. DB 대신 HashMap(MEMBER_DB)에 보관한다.
+ */
 @Repository
 public class MemberDao {
 	

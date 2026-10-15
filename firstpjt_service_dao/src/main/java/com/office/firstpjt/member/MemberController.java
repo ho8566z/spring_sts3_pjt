@@ -5,6 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ * 회원가입·로그인 화면 요청을 받아 MemberService 에 처리를 맡기고 뷰 이름을 반환한다.
+ */
 @Controller
 public class MemberController {
 	
