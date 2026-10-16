@@ -17,6 +17,12 @@ public class MemberService {
 		this.memberDao = memberDao;
 	}
 	
+	/**
+	 * 입력받은 회원 정보를 확인하고 MemberDao 에 저장을 요청한다.
+	 *
+	 * @param memberDto 가입할 회원 정보
+	 * @return 항상 0
+	 */
 	public int signUpConfirm(MemberDto memberDto) {
 		System.out.println("[MemberService] signUpConfirm()");
 		
@@ -32,6 +38,11 @@ public class MemberService {
 		
 	}
 	
+	/**
+	 * 입력받은 아이디와 비밀번호로 로그인 확인을 MemberDao 에 요청한다.
+	 *
+	 * @param memberDto 로그인할 회원의 아이디와 비밀번호
+	 */
 	public void signInConfirm(MemberDto memberDto) {
 		System.out.println("[MemberService] signInConfirm()");
 		
