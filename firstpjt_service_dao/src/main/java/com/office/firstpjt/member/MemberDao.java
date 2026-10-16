@@ -17,6 +17,11 @@ public class MemberDao {
 	
 	final private Map<String, MemberDto> MEMBER_DB = new HashMap<String, MemberDto>();
 
+	/**
+	 * 회원 정보를 아이디를 키로 MEMBER_DB 에 저장하고 전체 목록을 출력한다.
+	 *
+	 * @param memberDto 저장할 회원 정보
+	 */
 	public void insertMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertMember()");
 		
@@ -32,6 +37,7 @@ public class MemberDao {
 		
 	}
 	
+	/** MEMBER_DB 에 저장된 모든 회원 정보를 콘솔에 출력한다. */
 	private void printAllMember() {
 		System.out.println("[MemberDao] printAllMember()");
 		
@@ -51,6 +57,11 @@ public class MemberDao {
 		
 	}
 
+	/**
+	 * 아이디로 회원을 찾아 비밀번호가 같으면 로그인 성공을 출력한다.
+	 *
+	 * @param memberDto 로그인할 회원의 아이디와 비밀번호
+	 */
 	public void selectMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] selectMember()");
 		
