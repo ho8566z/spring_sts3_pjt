@@ -5,10 +5,15 @@ package com.office.firstpjt.member;
  */
 public class MemberDto {
 	
+	/** 회원 아이디 */
 	private String m_Id;
+	/** 회원 비밀번호 */
 	private String m_Pw;
+	/** 회원 메일 주소 */
 	private String m_Mail;
+	/** 회원 전화번호 */
 	private String m_Phone;
+	/** 회원 나이 */
 	private Integer m_Age;
 	
 	public String getM_Id() {
