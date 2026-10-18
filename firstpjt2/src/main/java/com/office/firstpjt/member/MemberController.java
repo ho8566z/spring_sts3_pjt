@@ -3,6 +3,10 @@ package com.office.firstpjt.member;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * 회원가입, 로그인 화면 요청을 처리하는 컨트롤러.
+ * 각 메서드는 화면 이름(sign_up, sign_in)만 돌려주고 실제 처리는 아직 없다.
+ */
 @Controller
 public class MemberController {
 
