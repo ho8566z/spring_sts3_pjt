@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MemberController {
 
-	// 회원가입
+	/**
+	 * 회원가입 화면(sign_up)을 돌려준다.
+	 */
 	@RequestMapping("/signUp")
 	public String signUp() {
 		System.out.println("[MemberController] signUp()");
@@ -17,7 +19,9 @@ public class MemberController {
 		return "sign_up";
 	}
 	
-	// 로그인
+	/**
+	 * 로그인 화면(sign_in)을 돌려준다.
+	 */
 	@RequestMapping("/signIn")
 	public String signIn() {
 		System.out.println("[MemberController] signIn()");
