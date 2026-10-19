@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * Handles requests for the application home page.
+ * 홈 화면("/") 요청을 처리하는 컨트롤러.
  */
 @Controller
 public class HomeController {
@@ -20,7 +20,7 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
-	 * Simply selects the home view to render by returning its name.
+	 * 접속한 클라이언트의 지역 설정에 맞춘 서버 시간을 모델에 담고 home 화면을 돌려준다.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
