@@ -73,7 +73,7 @@ public class MemberController {
 	public String signInConfirm(MemberDto memberDto) {
 		System.out.println("[MemberController] signInConfirm()");
 		
-		memberService.signUpConfirm(memberDto);
+		memberService.signInConfirm(memberDto);
 		
 		return "sign_in_ok";
 		
