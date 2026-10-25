@@ -1,9 +1,7 @@
 package com.office.firstpjt.member;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 
 import org.springframework.stereotype.Repository;
 
@@ -41,13 +39,7 @@ public class MemberDao {
 	private void printAllMember() {
 		System.out.println("[MemberDao] printAllMember()");
 		
-		Set<String> keys = MEMBER_DB.keySet();
-		Iterator<String> iterator = keys.iterator();
-		
-		while (iterator.hasNext()) {
-			String m_id = iterator.next();
-			MemberDto memberDto = MEMBER_DB.get(m_id);
-			
+		for (MemberDto memberDto : MEMBER_DB.values()) {
 			System.out.println("Dao2-M_id : " + memberDto.getM_Id());
 			System.out.println("Dao2-M_pw : " + memberDto.getM_Pw());
 			System.out.println("Dao2-M_mail : " + memberDto.getM_Mail());
