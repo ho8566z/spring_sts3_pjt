@@ -47,6 +47,7 @@ public class User {
 			return this;
 		}
 	
+		/** 지금까지 입력한 값으로 User 를 만든다. */
 		public User build() {
 			return new User(this);
 		}
