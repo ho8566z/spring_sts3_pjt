@@ -1,5 +1,9 @@
 package com.office.builderex;
 
+/**
+ * 회원 정보(이름, 나이, 메일, 연락처)를 담는 클래스.
+ * Builder 로만 만들 수 있고, 이름과 나이는 필수 정보이다.
+ */
 public class User {
 	
 	/*
