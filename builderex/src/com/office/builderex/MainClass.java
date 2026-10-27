@@ -1,5 +1,8 @@
 package com.office.builderex;
 
+/**
+ * Builder 패턴으로 User 를 만들어 보는 예제.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
