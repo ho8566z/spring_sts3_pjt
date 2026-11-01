@@ -16,6 +16,7 @@ public class User {
 	private String mail;
 	private String phone;
 	
+	/** Builder 에 모인 값으로 User 를 만든다. */
 	public User(Builder builder) {
 		this.name = builder.name;
 		this.age = builder.age;
@@ -29,19 +30,19 @@ public class User {
 		private String mail;
 		private String phone;
 		
-		// 필수정보
+		/** 필수 정보(이름, 나이)를 받아 Builder 를 만든다. */
 		public Builder(String name, int age) {
 			this.name = name;
 			this.age = age;
 		}
 		
-		// 추가정보 1
+		/** 추가 정보인 메일을 설정하고 Builder 자신을 돌려준다. */
 		public Builder mail(String mail) {
 			this.mail = mail;
 			return this;
 		}
 		
-		// 추가정보 2
+		/** 추가 정보인 연락처를 설정하고 Builder 자신을 돌려준다. */
 		public Builder phone(String phone) {
 			this.phone = phone;
 			return this;
