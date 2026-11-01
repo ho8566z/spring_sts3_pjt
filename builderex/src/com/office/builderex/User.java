@@ -52,6 +52,11 @@ public class User {
 			return new User(this);
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", age=" + age + ", mail=" + mail + ", phone=" + phone + "]";
+	}
 	
 	
 }
