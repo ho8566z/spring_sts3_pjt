@@ -22,7 +22,11 @@ public class MemberController {
 		this.memberService = memberService;
 	}
 
-	// 회원가입
+	/**
+	 * 회원가입 화면(sign_up)을 돌려준다.
+	 *
+	 * @return 뷰 이름 sign_up
+	 */
 	@RequestMapping("/signUp")
 	public String signUp() {
 		System.out.println("[MemberController] signUp() called");
@@ -31,7 +35,12 @@ public class MemberController {
 		return "sign_up";
 	}
 	
-	// 회원가입 확인(+MemberDto)
+	/**
+	 * 회원가입 폼(POST)으로 받은 정보를 MemberService 에 넘겨 가입을 처리한다.
+	 *
+	 * @param memberDto 폼에서 전달된 회원 정보
+	 * @return 뷰 이름 sign_up_ok
+	 */
 	@RequestMapping(value="/signUpConfirm", method=RequestMethod.POST)
 	public String signUpConfirm(MemberDto memberDto) {
 		System.out.println("[MemberController] signUpConfirm() called");
@@ -59,7 +68,11 @@ public class MemberController {
 	}
 	
 	
-	// 로그인
+	/**
+	 * 로그인 화면(sign_in)을 돌려준다.
+	 *
+	 * @return 뷰 이름 sign_in
+	 */
 	@RequestMapping("/signIn")
 	public String signIn() {
 		System.out.println("[MemberController] signIn() called");
@@ -68,7 +81,12 @@ public class MemberController {
 		
 	}
 	
-	// 로그인 확인
+	/**
+	 * 로그인 폼(POST)으로 받은 아이디와 비밀번호를 MemberService 에 넘겨 로그인을 확인한다.
+	 *
+	 * @param memberDto 폼에서 전달된 아이디와 비밀번호
+	 * @return 뷰 이름 sign_in_ok
+	 */
 	@RequestMapping(value="/signInConfirm", method=RequestMethod.POST)
 	public String signInConfirm(MemberDto memberDto) {
 		System.out.println("[MemberController] signInConfirm()");
