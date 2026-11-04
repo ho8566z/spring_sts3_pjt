@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<%-- 로그인 폼: 아이디·비밀번호를 /first/signInConfirm 으로 POST 전송한다. --%>
 	<form 
 		action="/first/signInConfirm" 
 		method="post">
