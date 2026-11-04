@@ -24,6 +24,10 @@ public class User {
 		this.phone = builder.phone;
 	}
 	
+	/**
+	 * User 를 단계별로 조립하는 Builder.
+	 * 필수 정보(이름, 나이)는 생성자로, 추가 정보(메일, 연락처)는 메서드 체이닝으로 받는다.
+	 */
 	public static class Builder {
 		private String name;
 		private int age;
