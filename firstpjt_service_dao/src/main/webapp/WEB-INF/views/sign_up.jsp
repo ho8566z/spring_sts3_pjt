@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<%-- 회원가입 폼: 아이디·비밀번호·메일·전화·나이를 /firstpjt/signUpConfirm 으로 POST 전송한다. --%>
 	<form 
 		action="/firstpjt/signUpConfirm"
 		method="post">
