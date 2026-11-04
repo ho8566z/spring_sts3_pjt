@@ -13,6 +13,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class MemberDao {
 	
+	/** DB 대신 쓰는 메모리 저장소. 회원 아이디(m_Id)를 키로 MemberDto 를 보관한다. */
 	final private Map<String, MemberDto> MEMBER_DB = new HashMap<String, MemberDto>();
 
 	/**
