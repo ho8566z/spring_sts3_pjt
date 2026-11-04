@@ -8,6 +8,7 @@
 </head>
 <body>
 
+	<%-- 요청 처리 결과 화면: 성공 메시지만 보여준다. --%>
 	<h1>SIGN UP : SUCCESS</h1>
 
 </body>
