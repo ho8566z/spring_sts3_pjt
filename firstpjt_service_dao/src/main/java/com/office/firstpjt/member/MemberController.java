@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MemberController {
 	
-//	@Autowired
-//	MemberService memberService;
-	
 	// 생성자 주입 : final 로 선언해 의존 객체가 바뀌지 않도록 한다
 	private final MemberService memberService;
 	
