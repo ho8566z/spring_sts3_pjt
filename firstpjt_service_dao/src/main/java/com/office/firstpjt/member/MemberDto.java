@@ -16,6 +16,12 @@ public class MemberDto {
 	/** 회원 나이 */
 	private Integer m_Age;
 	
+	@Override
+	public String toString() {
+		// 비밀번호는 로그에 남지 않도록 출력하지 않는다.
+		return "MemberDto [m_Id=" + m_Id + ", m_Mail=" + m_Mail + ", m_Phone=" + m_Phone + ", m_Age=" + m_Age + "]";
+	}
+	
 	public String getM_Id() {
 		return m_Id;
 	}
