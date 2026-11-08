@@ -48,18 +48,8 @@ public class MemberController {
 		System.out.println("m_Phone : " + memberDto.getM_Phone());
 		System.out.println("m_Age : " + memberDto.getM_Age());
 		
-		// 1.new로 새로운 객체 생성
-//		MemberService memberService = new MemberService();
-//		memberService.SignUpConfirm(memberDto);
-		
-		// 2.xml을 이용해 IoC컨테이너 활용해 bean생성
-//		@Autowired
-//		MemberService memberService;
+		// MemberService 는 직접 new 하지 않고, 스프링이 @Service 로 만들어 둔 bean 을 주입받아 쓴다.
 		memberService.signUpConfirm(memberDto);
-		
-		// 3.애너테이션을 활용해 bean생성(MemberService에서)
-//		@Service
-//		public class MemberService {}
 		
 		return "sign_up_ok";
 	}
