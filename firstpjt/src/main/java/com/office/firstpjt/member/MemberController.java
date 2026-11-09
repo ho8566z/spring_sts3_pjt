@@ -14,6 +14,7 @@ public class MemberController {
 	 */
 	@RequestMapping("/signUp")
 	public String signUp() {
+		/ 메서드가 호출됐는지 확인하는 로그
 		System.out.println("[MemberController] signUp()");
 		
 		return "sign_up";
