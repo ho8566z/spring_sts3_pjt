@@ -5,6 +5,7 @@ package com.office.builderex;
  */
 public class MainClass {
 	
+	/** 필수 정보(이름, 나이)와 연락처만 넣어 User 를 만들고 출력한다. 메일은 생략할 수 있다. */
 	public static void main(String[] args) {
 		
 		User user = new User.Builder("gildong", 20)
