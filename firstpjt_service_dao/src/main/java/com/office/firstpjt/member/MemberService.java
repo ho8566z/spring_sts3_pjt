@@ -11,6 +11,11 @@ public class MemberService {
 
 	final private MemberDao memberDao;
 	
+	/**
+	 * 스프링이 MemberDao 를 자동으로 주입해 생성한다.
+	 *
+	 * @param memberDao 회원 저장·조회를 맡는 DAO
+	 */
 	@Autowired		// 의존 객체 자동 주입(DI, Dependency Injection)
 	public MemberService(MemberDao memberDao) {
 		this.memberDao = memberDao;
