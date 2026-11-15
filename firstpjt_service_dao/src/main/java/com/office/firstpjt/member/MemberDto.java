@@ -16,6 +16,7 @@ public class MemberDto {
 	/** 회원 나이 */
 	private Integer m_Age;
 	
+	/** 비밀번호를 뺀 회원 정보를 문자열로 만들어 반환한다. */
 	@Override
 	public String toString() {
 		// 비밀번호는 로그에 남지 않도록 출력하지 않는다.
